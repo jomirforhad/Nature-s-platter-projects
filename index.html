@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature`s platter</title>
+    <!-- Google Fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwindcss cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUi cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awsome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+        .font-Sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+   
 </head>
-<body>
+<body class="font-Sora">
+    
+    <!-- Header Section  -->
+    <header>
+        <div class="bg-custom-gradient">
+            <header class="absolute inset-x-0 top-0 z-50">
+              <nav class="flex items-center justify-between p-10 lg:px-24" aria-label="Global">
+                <div class="flex lg:flex-1">
+                  <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[154.04px] h-[60.56px] left-[140px] top-[24px]" src="images/logo-header.png" alt="">
+                  </a>
+                </div>
+                <div class=" lg:flex lg:gap-x-12">
+                  <a href="#" class="text-xl font-semibold text-gray-900">Product</a>
+                  <a href="#" class="text-xl font-semibold text-gray-900">Services</a>
+                  <a href="#" class="text-xl font-semibold text-gray-900">Contact us</a>
+                </div>
+
+            
+                <div class=" lg:flex lg:flex-1 lg:justify-end">
+                    <ul class="flex flex-row justify-center items-center space-x-4 mr-8">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </ul>
+                    <button class="btn bg-white px-8 mr-6 border border-green-500 rounded-md text-gray-900">Login</button>
+                    <button class="btn rounded-md bg-green-500 px-8 py-2 text-gray-900">Register</button>
+                </div>
+              </nav>
+              <!-- Mobile menu, show/hide based on menu open state. -->
+              <div class="lg:hidden">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                  <div class="flex items-center justify-between">
+                    <a href="#" class="-m-1.5 p-1.5">
+
+                      <img class="h-8 w-auto" src="images/logo-footer.png" alt="">
+                    </a>
+                    <button class="btn btn-square btn-ghost">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          class="inline-block h-5 w-5 stroke-current">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                      </button>
+                  </div>
+                  <hr class=" border-[0.5px] border-green-400">
+                </div>
+              </div>
+            </header>
+          
+            <div class=" mt-8 max-w-auto py-32 sm:py-48 lg:py-56">
+               
+                <div class="text-center">
+                  <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Freshness <span class="text-green-500">You Can <br>
+                    Count</span>  On, Prices You’ll Love!</h1>
+                  <p class="mt-8 mx-[35rem] text-lg font-normal text-pretty text-gray-900 sm:text-xl/8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                  
+                  <div class="flex items-center justify-center h-screen">
+                    <img src="images/hero-vegetables.png" alt="Centered Image" class="max-w-full h-auto">
+                </div>
+                
+                </div>
+                
+              </div>
+            
+          </div>
+
+    </header>
+
+    
+    <!-- Main Section -->
+    <main>
+        <section>
+            <div class="container mx-auto py-12">
+                <h2 class="text-3xl font-bold text-green-600 mb-8">Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="rounded-[16px] bg-[#efebe3] p-6 w-[424px] h-[367px] shadow-lg text-center">
+                        <div class="mb-4">
+                            <img src="images/service.png" alt="24/7 Services" class="mx-auto rounded-[100px] bg-white w-[150px] max-w-full h-auto">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">24/7 Services</h3>
+                        <p class="text-gray-600">Our dedicated team is available around the clock to assist you with any needs or inquiries you may have.</p>
+                    </div>
+                    <div class="rounded-[16px] bg-[#efebe3] p-6 w-[424px] h-[367px] shadow-lg text-center">
+                        <div class="mb-4">
+                            <img  src="images/delivery.png" alt="Fast Delivery" class="mx-auto rounded-[100px] bg-white w-[150px] max-w-full h-auto">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                        <p class="text-gray-600">Get your orders delivered in record time! Our efficient delivery network ensures that your purchases reach.</p>
+                    </div>
+                    <div class="rounded-[16px] bg-[#efebe3] p-6 w-[424px] h-[367px] shadow-lg text-center">
+                        <div class="mb-4">
+                            <img src="images/healthy.png" alt="Healthy Products" class="mx-auto rounded-[100px] bg-white w-[150px] max-w-full h-auto">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Healthy Products</h3>
+                        <p class="text-gray-600">Discover a wide range of healthy products carefully curated to support your wellness journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
+
+
     
 </body>
 </html>
